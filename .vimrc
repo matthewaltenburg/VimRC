@@ -9,7 +9,6 @@
 "     \|__|/        \|__| \|__|     \|__| \|__|\|__| \|_______|
 
 " Some basics
-  set number relativenumber     	"Turn on line numbers
 	set hlsearch             		"Turn on highlighting
 	set nocompatible 	        	"Set compatibility to Vim only.
 	set wildmode=longest,list,full	"Turns on autocomplete
