@@ -9,14 +9,12 @@
 "     \|__|/        \|__| \|__|     \|__| \|__|\|__| \|_______|
 
 " Some basics
-	set hlsearch             		"Turn on highlighting
-	set nocompatible 	        	"Set compatibility to Vim only.
-	set wildmode=longest,list,full	"Turns on autocomplete
-	set tabstop=4		        	"Use 4 spaces instead of tab stop
-    set shiftwidth=4                "Set 4 spaces >
-	set expandtab		        	"Change all tabs to spaces
-    "set statusline=%<%f\ %h%m%r%{kite#statusline()}%=%-14.(%l,%c%V%)\ %P
-    set laststatus=2
+  set hlsearch             		"Turn on highlighting
+  set nocompatible 	        	"Set compatibility to Vim only.
+  set wildmode=longest,list,full	"Turns on autocomplete
+  set tabstop=4		        	"Use 4 spaces instead of tab stop
+  set shiftwidth=4                	"Set 4 spaces >
+  set expandtab		        	"Change all tabs to spaces
 
 " Set color scheme
   colorscheme elflord
@@ -34,18 +32,5 @@
     "Change leader key
     let mapleader = "\<Space>"
 
-    "Netrw
-    let g:netrw_liststyle=3 "Show the tree listing"
-    map <leader>e :Texplore<CR>
-    let ghregex='\(^\|\s\s\)\zs\.\S\+'
-    let g:netrw_list_hide=ghregex
-
-    "Spell check on and off
-    map <leader>s :setlocal spell! spelllang=en_us<CR>
-
 "Automatically delete all white space on save
     autocmd BufWritePre * %s/\s\+$//e
-
-"# lines to save text folding
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview
