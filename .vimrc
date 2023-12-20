@@ -47,12 +47,6 @@
 "Automatically delete all white space on save
     autocmd BufWritePre * %s/\s\+$//e
 
-"Plugins
-	call plug#begin('~/.vim/plugged')
-
-	call plug#end()
-
-"####################################################################
 "# lines to save text folding
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
