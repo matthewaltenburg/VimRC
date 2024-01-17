@@ -19,11 +19,11 @@
 " Set color scheme
   colorscheme elflord
 
-" Mapping for Ctrl-Arrow keys to navigate between Vim split screens
-  nnoremap <C-Left> <C-w>h
-  nnoremap <C-Down> <C-w>j
-  nnoremap <C-Up> <C-w>k
-  nnoremap <C-Right> <C-w>l
+" Mapping for Ctrl+Space and Arrow keys to navigate between Vim split screens
+nnoremap <C-Space><Left> <C-w>h
+nnoremap <C-Space><Down> <C-w>j
+nnoremap <C-Space><Up> <C-w>k
+nnoremap <C-Space><Right> <C-w>l
 
 " Mapping
     "Clear Highlighting"
